@@ -1,0 +1,20 @@
+# Compiled binaries
+*.out
+*.o
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Backup files
+*~
+*.bak
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+.idea/
