@@ -38,7 +38,6 @@ Built using **Tailwind CSS** and designed for readability and clarity, the site 
 |------------------|---------------------------------------|
 | `index.html`     | Main website page                    |
 | `README.md`      | This file                            |
-| `.github/`       | GitHub configs (if any)              |
 | `releases/`      | (On main repo) Script releases       |
 
 ---
