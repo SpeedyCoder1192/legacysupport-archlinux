@@ -1,65 +1,54 @@
-# Legacy Support Installer for Arch Linux
+# 🌐 LegacySupport ArchLinux — Website
 
-[![Release](https://img.shields.io/github/v/release/SpeedyCoder1192/legacysupport-archlinux)](https://github.com/SpeedyCoder1192/legacysupport-archlinux/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub Repo](https://img.shields.io/badge/Main%20Repo-GitHub-181717?logo=github)](https://github.com/SpeedyCoder1192/legacysupport-archlinux)
+[![Website](https://img.shields.io/badge/Live%20Site-Click%20Here-blue?logo=google-chrome)](https://speedycoder1192.github.io/legacysupport-archlinux/)
 
-A user-friendly script to add **legacy CPU and GPU support** to an Arch Linux installation — perfect for USB installations that need to run on a wide variety of hardware.
+This is the official **website** for the [LegacySupport ArchLinux](https://github.com/SpeedyCoder1192/legacysupport-archlinux) project.
 
----
-
-## ⚙️ Features
-
-* Adds support for older **AMD** and **Intel** CPUs/GPUs
-* Installs the `linux-lts` kernel for better compatibility with legacy hardware
-* Prompts you to choose what to install (CPU or GPU support)
-* Automatically adds a new bootloader entry: `Legacy Arch (linux-lts)`
-* Simple and interactive script flow
+> 🛠️ A tool to make Arch Linux more compatible with legacy Intel/AMD CPUs and GPUs.
 
 ---
 
-## 📥 Download
+## 📖 About the Project
 
-**Option 1 – Recommended:**
+LegacySupport ArchLinux is a simple script designed to enhance hardware compatibility for older systems running Arch Linux. Whether you're booting from USB or maintaining a portable installation, this script allows smooth operation on older CPUs and GPUs by:
 
-➡️ [Download the latest release script (ver\_release)](https://github.com/SpeedyCoder1192/legacysupport-archlinux/releases/download/ver_release/archlegacysupport.sh)
-
-Then run:
-
-```bash
-chmod +x legacy-support-installer.sh
-./legacy-support-installer.sh
-```
-
-**Option 2 – Manual Clone:**
-
-```bash
-git clone https://github.com/SpeedyCoder1192/legacysupport-archlinux
-cd legacysupport-archlinux
-# Download script manually from the Releases tab
-```
+- Installing the `linux-lts` kernel
+- Providing an interactive installer for legacy Intel and AMD components
+- Adding a GRUB boot entry named: `Legacy Arch (linux-lts)`
 
 ---
 
-## 💡 Notes
+## 🌍 Live Website
 
-* Be sure to run the script **before** booting on older PCs.
-* Your bootloader must support systemd-boot or be manually configured if using something else.
-* Works great with modern and older Intel/AMD systems — includes detection and correct driver install paths.
+👉 [**Visit the website here**](https://speedycoder1192.github.io/legacysupport-archlinux/)
 
----
+Built using **Tailwind CSS** and designed for readability and clarity, the site includes:
 
-## 🧪 Tested On
-
-* ✅ Modern Intel systems (UHD 620, etc.)
-* ✅ AMD Ryzen (All Series) with RadeonT (Radeon Graphics)
-* ✅ Older AMD APU systems (A-series)
+- 🔹 Project overview
+- 🔹 Download links
+- 🔹 GitHub integration
+- 🔹 Issue reporting
 
 ---
 
-## 📝 License
+## 📂 Repo Structure
 
-Licensed under the MIT License. See `LICENSE` file for details.
+| File/Folder      | Purpose                              |
+|------------------|---------------------------------------|
+| `index.html`     | Main website page                    |
+| `README.md`      | This file                            |
+| `.github/`       | GitHub configs (if any)              |
+| `releases/`      | (On main repo) Script releases       |
 
 ---
 
-Enjoy booting Arch everywhere! 😄
+## 🤝 Contribute
+
+Have feedback or suggestions for the site? Open an issue or submit a pull request!
+
+---
+
+## ⚖ License
+
+MIT License. See the [main project repo](https://github.com/SpeedyCoder1192/legacysupport-archlinux/blob/main/LICENSE) for details.
