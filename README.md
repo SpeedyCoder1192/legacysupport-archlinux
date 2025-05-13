@@ -21,7 +21,7 @@ A user-friendly script to add **legacy CPU and GPU support** to an Arch Linux in
 
 **Option 1 – Recommended:**
 
-➡️ [Download the latest release script (ver\_1.0)]([https://github.com/SpeedyCoder1192/legacysupport-archlinux/releases/download/ver_1.0/archlegacysupport.sh])
+➡️ [Download the latest release script (ver\_1.0)](https://github.com/SpeedyCoder1192/legacysupport-archlinux/releases/download/ver_1.0/archlegacysupport.sh)
 
 Then run:
 
@@ -30,12 +30,12 @@ chmod +x legacy-support-installer.sh
 ./legacy-support-installer.sh
 ```
 
-**Option 2 – Manual Clone:**
+**Option 2 – Command Line:**
 
 ```bash
-git clone https://github.com/SpeedyCoder1192/legacysupport-archlinux
-cd legacysupport-archlinux
-# Download script manually from the Releases tab
+wget https://github.com/SpeedyCoder1192/legacysupport-archlinux/releases/download/ver_1.0/archlegacysupport.sh
+chmod +x archlegacysupport.sh
+./legacy-support-installer.sh
 ```
 
 ---
