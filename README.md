@@ -19,19 +19,6 @@ LegacySupport ArchLinux is a simple script designed to enhance hardware compatib
 
 ---
 
-## 🌍 Live Website
-
-👉 [**Visit the website here**](https://speedycoder1192.github.io/legacysupport-archlinux/)
-
-Built using **Tailwind CSS** and designed for readability and clarity, the site includes:
-
-- 🔹 Project overview
-- 🔹 Download links
-- 🔹 GitHub integration
-- 🔹 Issue reporting
-
----
-
 ## 📂 Repo Structure
 
 | File/Folder      | Purpose                              |
