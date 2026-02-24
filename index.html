@@ -5,120 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LegacySupport ArchLinux</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --cc-navy: #10162f;
+            --cc-white: #fffcf5;
+            --cc-yellow: #f5ae18;
+            --cc-teal: #3deabb;
+            --cc-purple: #7e53f9;
+        }
         body {
             font-family: 'Inter', sans-serif;
+            background-color: var(--cc-white);
+            color: var(--cc-navy);
         }
-        .hero-bg {
-            background-color: #2d3748;
+        /* Codecademy "Blocky" Shadow */
+        .cc-card {
+            border: 2px solid var(--cc-navy);
+            box-shadow: 4px 4px 0px var(--cc-navy);
+            transition: all 0.2s ease;
         }
-        .section-bg {
-            background-color: #edf2f7;
+        .cc-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0px var(--cc-navy);
         }
-        ::-webkit-scrollbar {
-            width: 6px;
+        .cc-btn {
+            border: 2px solid var(--cc-navy);
+            box-shadow: 3px 3px 0px var(--cc-navy);
+            transition: all 0.1s ease;
         }
-        ::-webkit-scrollbar-track {
-            background: #f0f0f0;
+        .cc-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px var(--cc-navy);
         }
-        ::-webkit-scrollbar-thumb {
-            background: #a0aec0;
-            border-radius: 8px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #718096;
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--cc-white); }
+        ::-webkit-scrollbar-thumb { 
+            background: var(--cc-navy); 
+            border: 2px solid var(--cc-white);
         }
     </style>
 </head>
-<body class="bg-gray-200 text-gray-800 antialiased">
+<body class="antialiased">
 
-    <nav class="bg-gray-700 text-white p-3 shadow-md sticky top-0 z-50">
+    <nav class="bg-white border-b-2 border-[#10162f] p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <a href="#" class="text-xl font-semibold">LegacySupport ArchLinux</a>
-            <div>
-                <a href="#about" class="px-2 py-1 rounded-md text-sm hover:bg-gray-600">About</a>
-                <a href="#issues-downloads" class="px-2 py-1 rounded-md text-sm hover:bg-gray-600 ml-1">Issues & Downloads</a>
-                <a href="https://github.com/SpeedyCoder1192/legacysupport-archlinux" target="_blank" rel="noopener noreferrer" class="bg-indigo-500 hover:bg-indigo-600 text-white px-3 py-1 rounded-md text-sm font-medium ml-2 transition duration-150 ease-in-out">
+            <a href="#" class="text-xl font-black uppercase italic tracking-tighter">LegacySupport Arch</a>
+            <div class="font-bold text-xs uppercase tracking-widest flex items-center space-x-4">
+                <a href="#about" class="hover:text-[#7e53f9]">About</a>
+                <a href="#issues-downloads" class="hover:text-[#3deabb]">Downloads</a>
+                <a href="https://github.com/SpeedyCoder1192/legacysupport-archlinux" target="_blank" class="cc-btn bg-[#f5ae18] px-3 py-1 rounded-none">
                     GitHub Repo
                 </a>
             </div>
         </div>
     </nav>
 
-    <header class="hero-bg text-white py-12 md:py-16">
+    <header class="bg-[#3deabb] border-b-2 border-[#10162f] py-16 md:py-24">
         <div class="container mx-auto text-center px-6">
-            <h1 class="text-3xl md:text-4xl font-bold mb-3">LegacySupport for Arch Linux</h1>
-            <p class="text-md md:text-lg mb-6 text-gray-300">Resources for using older hardware with Arch Linux.</p>
-            <a href="https://github.com/SpeedyCoder1192/legacysupport-archlinux" target="_blank" rel="noopener noreferrer" class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-6 rounded-md text-md transition duration-150 ease-in-out transform hover:scale-105">
-                Visit Repository
-            </a>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight uppercase">LegacySupport <br class="md:hidden"> for Arch Linux</h1>
+            <p class="text-lg md:text-xl mb-8 font-bold bg-white inline-block px-4 py-1 border-2 border-[#10162f] cc-card">
+                Old hardware. New possibilities.
+            </p>
+            <div>
+                <a href="https://github.com/SpeedyCoder1192/legacysupport-archlinux" target="_blank" class="cc-btn bg-[#7e53f9] text-white font-black py-3 px-8 uppercase tracking-widest text-sm inline-block">
+                    Visit Repository
+                </a>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="py-10 md:py-16 section-bg">
+    <section id="about" class="py-16 md:py-24">
         <div class="container mx-auto px-6">
-            <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8 text-gray-700">About This Project</h2>
-            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
-                <p class="text-md text-gray-700 leading-relaxed mb-3">
+            <h2 class="text-3xl font-black mb-12 uppercase text-center underline decoration-[#7e53f9] decoration-4 underline-offset-8">About This Project</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 border-2 border-[#10162f] cc-card">
+                <p class="text-lg font-medium leading-relaxed mb-6">
                     This project provides a user-friendly script designed to add legacy CPU and GPU support to Arch Linux installations. It's ideal for USB-based or portable setups intended to run on older or varied hardware.
                 </p>
-                <p class="text-md text-gray-700 leading-relaxed mb-3">
-                    The script detects older AMD and Intel hardware, installs the <code>linux-lts</code> kernel for improved compatibility, and offers an interactive setup process that lets users choose what to install. It also adds a convenient bootloader entry labeled <strong>Legacy Arch (linux-lts)</strong>.
-                </p>
-                <p class="text-md text-gray-700 leading-relaxed">
+                <div class="bg-[#f5ae18] p-4 mb-6 border-2 border-[#10162f] font-bold">
+                    The script detects older AMD and Intel hardware and installs the <code class="bg-white px-1">linux-lts</code> kernel for improved compatibility.
+                </div>
+                <p class="text-lg font-medium leading-relaxed">
                     Whether you're booting on a modern or older PC, this project aims to make Arch Linux accessible everywhere—especially where official support might be lacking.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="issues-downloads" class="py-10 md:py-16 section-bg">
+    <section id="issues-downloads" class="py-16 md:py-24 bg-[#10162f] text-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8 text-gray-700">Issues & Downloads</h2>
-            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md text-center">
-                <p class="text-md text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-3xl font-black mb-12 uppercase text-center text-[#3deabb]">Issues & Downloads</h2>
+            <div class="max-w-2xl mx-auto bg-white text-[#10162f] p-10 border-2 border-[#10162f] cc-card text-center">
+                <p class="text-xl font-bold mb-8">
                     The main hub for this project is the GitHub repository.
                 </p>
-                <p class="text-md text-gray-700 leading-relaxed mb-6">
-                    Visit the repository to download project files, report bugs via the Issues tab, or see discussions. Contributions are welcome!
+                <p class="font-medium mb-10 opacity-80">
+                    Visit the repository to download project files, report bugs via the Issues tab, or see discussions.
                 </p>
-                <a href="https://github.com/SpeedyCoder1192/legacysupport-archlinux" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-md text-md transition duration-150 ease-in-out transform hover:scale-105">
-                    Go to GitHub
+                <a href="https://github.com/SpeedyCoder1192/legacysupport-archlinux" target="_blank" class="cc-btn bg-[#3deabb] text-[#10162f] font-black py-4 px-10 uppercase tracking-widest">
+                    Go to GitHub →
                 </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-700 text-white py-6">
-        <div class="container mx-auto text-center px-6">
-            <p class="text-sm mb-1">&copy; <span id="currentYear"></span> LegacySupport ArchLinux Project.</p>
-            <p class="text-sm">
-                <a href="https://github.com/SpeedyCoder1192/legacysupport-archlinux" target="_blank" rel="noopener noreferrer" class="text-indigo-300 hover:text-indigo-200 underline">
-                    View on GitHub
-                </a>
-            </p>
+    <footer class="border-t-2 border-[#10162f] py-12 text-center">
+        <div class="container mx-auto px-6">
+            <p class="font-black uppercase tracking-tighter text-lg mb-2">SpeedyCoder1192</p>
+            <p class="text-xs font-bold uppercase opacity-60 mb-4">&copy; <span id="currentYear"></span> LegacySupport ArchLinux Project.</p>
+            <a href="https://github.com/SpeedyCoder1192/legacysupport-archlinux" target="_blank" class="font-black text-sm underline hover:text-[#7e53f9]">
+                View on GitHub
+            </a>
         </div>
     </footer>
 
     <script>
-        // Set current year in footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // Smooth scrolling for navigation links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
+                if(this.getAttribute('href') !== "#") {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
                 }
             });
         });
     </script>
-
 </body>
 </html>
